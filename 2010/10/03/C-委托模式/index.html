@@ -2,199 +2,144 @@
 <html lang="en">
 
 <head>
-  <!-- Website mata -->
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<!-- Disable transformation -->
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta name="theme-color" content="#f8f5ec" />
-<meta name="msapplication-navbutton-color" content="#f8f5ec">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+  <title>
+    
+      C#委托模式 | LAO WANG
+    
+  </title>
 
-<!-- Website description -->
+  <meta name="description" content="">
 
-<meta name="description" content="C#委托模式" />
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
 
-<!-- Website keywords -->
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<meta name="keywords" content="Tech, LAO WANG" />
-
-
-
-
-<!-- Website rss -->
-
-<link rel="alternate" href="/atom.xml" title="LAO WANG" type="application/atom+xml">
-
-
-<!-- Website favicon -->
-
-<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.11.0" />
-
-
-<!-- Canonical, good for google search engine -->
-<link rel="canonical" href="http://blackbear03.github.io/2010/10/03/C-委托模式/" />
-
-<!-- Fancybox styling -->
-
-<link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
-
-
-<!-- MathJax (LaTeX) support -->
-
-
-<!-- Theme styling -->
-<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.11.0" />
-
-<!-- Analytics and push -->
-
-
-<script id="baidu_analytics">
-  var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?" + "8ee5fa5409f3df806c00a4afa80773da";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-  })();
-</script>
+  <!-- Custom Theme CSS -->
+  
+<link rel="stylesheet" href="/css/clean-blog.css">
 
 
   
-
-
-
-<!-- LeanCloud Counter -->
-
-
-<script>
-  window.config = {"leancloud":{"app_id":null,"app_key":null},"toc":true,"fancybox":true,"latex":false};
-</script>
+    <link rel="canonical" href="/2010/10/03/C-%E5%A7%94%E6%89%98%E6%A8%A1%E5%BC%8F/">
   
-  <title>C#委托模式 - LAO WANG</title>
+
+  <link rel="alternate" type="application/rss+xml" title="LAO WANG" href="/atom.xml">
+
+  
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  
+
+  
 
 <meta name="generator" content="Hexo 7.1.1"></head>
 
 <body>
-  <div class="scrollPercentage"></div>
-  <div id="mobile-navbar" class="mobile-navbar">
-  <div class="mobile-header-logo">
-    <a href="/." class="logo">LAO WANG</a>
-  </div>
-  <div class="mobile-navbar-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
 
-<nav id="mobile-menu" class="mobile-menu slideout-menu">
-  <ul class="mobile-menu-list">
-    
-    <a href="/">
-      <li class="mobile-menu-item">
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">LAO WANG</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
         
+          
+            <li class="nav-item">
+              
+              
+              
+
+              
+                
+              
+
+              <a class="nav-link" href="/">Home</a>
+            </li>
+          
+            <li class="nav-item">
+              
+              
+              
+
+              
+                
+              
+
+              <a class="nav-link" href="/about">About</a>
+            </li>
+          
+            <li class="nav-item">
+              
+              
+              
+
+              
+                
+              
+
+              <a class="nav-link" href="/archives">Posts</a>
+            </li>
+          
+            <li class="nav-item">
+              
+              
+              
+
+              
+                
+              
+
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+          
         
-        Home              </li>
-    </a>
-    
-    <a href="/about/me">
-      <li class="mobile-menu-item">
-        
-        
-        About              </li>
-    </a>
-    
-    <a href="/links">
-      <li class="mobile-menu-item">
-        
-        
-        Links              </li>
-    </a>
-    
-  </ul>
+      </ul>
+    </div>
+  </div>
 </nav>
-  <div class="container" id="mobile-panel">
-    <header id="header" class="header">
-      <div class="logo-wrapper">  
-  <a href="/." class="logo">LAO WANG</a>  
-</div>  
-  
-<nav class="site-navbar">  
-    
-    <ul id="menu" class="menu">  
-        
-        <li class="menu-item">  
-          <a class="menu-item-link" href="/">  
-              
-              
-              Home  
-              
-          </a>  
-        </li>  
-        
-        <li class="menu-item">  
-          <a class="menu-item-link" href="/about/me">  
-              
-              
-              About  
-              
-          </a>  
-        </li>  
-        
-        <li class="menu-item">  
-          <a class="menu-item-link" href="/links">  
-              
-              
-              Links  
-              
-          </a>  
-        </li>  
-        
-    </ul>  
-    
-</nav>  
 
-    </header>
-    <main id="main" class="main">
-      <div class="content-wrapper">
-        <div id="content" class="content">
-          <article class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      C#委托模式
-      
-    </h1>
-
-    <div class="post-meta">
-      <span class="post-time">
-        2010-10-03
-      </span>
-      
-      
-      
-    </div>
-  </header>
-
-  
-  <div class="post-toc" id="post-toc">
-    <h2 class="post-toc-title">Contents</h2>
-    <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A7%94%E6%89%98%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">2.</span> <span class="toc-text">委托的定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A7%94%E6%89%98%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">3.</span> <span class="toc-text">委托的使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A7%94%E6%89%98%E4%B8%8E%E4%BA%8B%E4%BB%B6"><span class="toc-number">4.</span> <span class="toc-text">委托与事件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A7%94%E6%89%98%E7%9A%84%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8"><span class="toc-number">5.</span> <span class="toc-text">委托的链式调用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%9B%E5%9E%8B%E5%A7%94%E6%89%98"><span class="toc-number">6.</span> <span class="toc-text">泛型委托</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5%EF%BC%9A"><span class="toc-number">7.</span> <span class="toc-text">相关链接：</span></a></li></ol>
+  <!-- Page Header -->
+<header class="masthead" style="background-image: url('/img/home-bg.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-heading">
+          <h1>C#委托模式</h1>
+          
+          <span class="meta">
+            Posted by
+            
+              <a href="#">Your Name</a>
+            
+            on October 03, 2010
+            
+              • 10 min read
+            
+          </span>
+        </div>
+      </div>
     </div>
   </div>
-  
+</header>
 
-  <div class="post-content">
-    
-    <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>C# 中的委托（Delegate）是一种特殊的类型，它安全地封装了方法的签名和引用。委托特别用于实现事件和回调方法。使用委托，可以将方法作为参数传递或赋值给变量，并可以调用委托所引用的方法。<br><br></p>
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>C# 中的委托（Delegate）是一种特殊的类型，它安全地封装了方法的签名和引用。委托特别用于实现事件和回调方法。使用委托，可以将方法作为参数传递或赋值给变量，并可以调用委托所引用的方法。<br><br></p>
 <h3 id="委托的定义"><a href="#委托的定义" class="headerlink" title="委托的定义"></a>委托的定义</h3><p>委托的定义类似于方法的定义，但不带方法体。它定义了可以引用的方法的签名。</p>
 <figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="built_in">delegate</span> <span class="built_in">int</span> <span class="title">MyDelegate</span>(<span class="params"><span class="built_in">int</span> x, <span class="built_in">int</span> y</span>)</span>;</span><br></pre></td></tr></table></figure>
 
@@ -219,240 +164,77 @@
 <p>C#委托真的非常强大！！！<br><br></p>
 <h3 id="相关链接："><a href="#相关链接：" class="headerlink" title="相关链接："></a>相关链接：</h3><p>[1] <a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/dotnet/csharp/delegates-overview">C#中的委托和事件</a><br><br></p>
 
-    
-  </div>
-
-  
-  <!-- Post Copyright -->
-
-<div class="post-copyright">
-  <p class="copyright-item">
-    <span>Author: </span>
-    <a href="http://blackbear03.github.io">Mark</a>
-  </p>
-  <p class="copyright-item">
-    <span>Link: </span>
-    <a href="http://blackbear03.github.io/2010/10/03/C-%E5%A7%94%E6%89%98%E6%A8%A1%E5%BC%8F/">http://lwchannel.com/2010/10/03/C-%E5%A7%94%E6%89%98%E6%A8%A1%E5%BC%8F/</a>
-  </p>
-  <p class="copyright-item">
-    <span>License: </span>
-    
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>
-  </p>
-</div>
-
-    
-
-  
-
-  
-  <footer class="post-footer">
-    
-    <div class="post-tags">
-      
-      <a href="/tags/Tech/">Tech</a>
-      
-    </div>
-    
-      
-  <nav class="post-nav">  
-      
-      <a class="prev" href="/2010/11/04/Server%E6%95%B0%E6%8D%AE%E5%BA%93/">  
-        <i class="iconfont icon-left"></i>  
-        <span class="prev-text nav-default">C#连接SQL Server数据库</span>  
-        <span class="prev-text nav-mobile">Prev</span>  
-      </a>  
-      
-      
-  </nav>  
-  
-
-  </footer>
-  
-
-</article>
-        </div>
-          
-  <div class="comments" id="comments">  
-      
-      <div id="utterances-container"></div>  
-      
-  </div>  
-  
-
       </div>
-    </main>
-    <footer id="footer" class="footer">
-      <!-- Social Links -->
-
-<div class="social-links">
-  
-  
-  
-  
-  <a href="mailto:blackbear03.w@gmail.com" class="iconfont icon-email" title="email"></a>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <a target="_blank" rel="noopener" href="https://twitter.com/blackbear_03" class="iconfont icon-twitter" title="twitter"></a>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <a target="_blank" rel="noopener" href="https://github.com/blackbear03" class="iconfont icon-github" title="github"></a>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-  
-  <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
-  
-</div>
-
-
-<!-- 
-  <span id="busuanzi_container_site_pv">
-    欢迎来自C-53行星的第<span id="busuanzi_value_site_uv"></span>位访客
-  </span>
-  <span id="busuanzi_container_site_pv">
-    本站总访问量<span id="busuanzi_value_site_pv"></span>次
-  </span>
- <span class="post-meta-divider">|</span>
-  <span id="busuanzi_container_site_uv" style='display:none'>
-          本站访客数<span id="busuanzi_value_site_uv"></span>人
-  </span>
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
- -->
-
-<!-- <div class="copyright">
-  <span class="power-by">
-    Powered by <a class="hexo-link" target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    Theme -
-    <a class="theme-link" target="_blank" rel="noopener" href="https://github.com/zeed-w-beez/hexo-theme-even">Even</a>
-  </span>
-  <span class="division">|</span>
-  <span class="hosting-info">
-    footer.hosting
-  </span>
-
-  <span class="copyright-year">
-    <span>
-      
-      &copy;
-      
-      2015 - 2024      
-    </span>
-
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-
-    <span class="author">Mark</span>
-  </span>
-
-</div> -->
-
-<div class="copyright">
-  
-    <span id="busuanzi_container_site_pv">
-      欢迎来自C-53行星的第<span id="busuanzi_value_site_uv"></span>位朋友
-    </span>
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  
-  <!-- 使用emoji的Unicode -->
-  <span class="waving-hand">
-    &#x1F44B	
-  </span>
-  <!-- <span class="heart">
-    <i class="iconfont icon-heart"></i>
-  </span> -->
-
-</div>
-    </footer>
-    <div class="back-to-top" id="back-to-top"> <i class="iconfont icon-up"></i> </div>
+    </div>
   </div>
-    
-    
-    
-    
-    
+</article>
+
+<hr>
+
+<!-- Post Navigation -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <ul class="pager">
+        
+          <li class="previous">
+            <a href="/2010/11/04/Server%E6%95%B0%E6%8D%AE%E5%BA%93/" data-toggle="tooltip" data-placement="top" title="C#连接SQL Server数据库">&larr; Previous Post</a>
+          </li>
+        
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+            
+            
+            
+            
+            
+            
+              <li class="list-inline-item">
+                <a href="mailto:your-email@example.com">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            
+          
+        </ul>
+        
+          <p class="copyright text-muted">
+            Copyright &copy; Your Name 2024
+          </p>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="/js/jqBootstrapValidation.js"></script>
+<script src="/js/contact_me.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.js"></script>
+
+
+
   
-<script>
-  var container = document.getElementById('utterances-container');
-  var script = document.createElement('script');
-  script.src = 'https://utteranc.es/client.js';
-  script.setAttribute('repo', 'blackbear03/blackbear03.github.io');
-  script.setAttribute('issue-term', 'title');
-  script.setAttribute('theme', 'github-dark');
-  script.setAttribute('label', 'utterances');
-  script.crossorigin = 'anonymous';
-  script.async = true;
 
-  container.appendChild(script);
-</script>
-  
-    
-  
-
-  
-
-
-
-
-
-
-
-<script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
-
-
-
-<script type="text/javascript" src="/lib/slideout/slideout.js"></script>
-
-
-
-<script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-  <script type="text/javascript" src="/js/src/even.js?v=2.11.0"></script>
 </body>
-
 </html>
