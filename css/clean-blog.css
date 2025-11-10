@@ -270,3 +270,9 @@ footer .copyright {
   background-color: #fff;
   border-radius: 0;
 }
+article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+}
