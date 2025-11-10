@@ -300,12 +300,12 @@ article code {
   font-size: 0.9em;
 }
 article .highlight .gutter {
-  padding-right: 12px;
+  padding-right: 8px;
   text-align: right;
   color: #6a737d;
 }
 article .highlight .code {
-  padding-left: 8px;
+  padding-left: 2px;
 }
 article ol li pre,
 article ul li pre {
