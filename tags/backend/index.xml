@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Backend on Mark&#39;s BLOG</title>
-    <link>http://localhost:1313/tags/backend/</link>
+    <link>https://vibecoddd.github.io/tags/backend/</link>
     <description>Recent content in Backend on Mark&#39;s BLOG</description>
     <generator>Hugo -- 0.154.3</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 Jan 2020 21:25:57 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/backend/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vibecoddd.github.io/tags/backend/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Spring Boot：从开发到远程部署指南</title>
-      <link>http://localhost:1313/posts/java-web%E4%B9%8B%E6%97%85/</link>
+      <link>https://vibecoddd.github.io/posts/java-web%E4%B9%8B%E6%97%85/</link>
       <pubDate>Tue, 28 Jan 2020 21:25:57 +0000</pubDate>
-      <guid>http://localhost:1313/posts/java-web%E4%B9%8B%E6%97%85/</guid>
+      <guid>https://vibecoddd.github.io/posts/java-web%E4%B9%8B%E6%97%85/</guid>
       <description>&lt;h3 id=&#34;项目环境&#34;&gt;项目环境&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;操作系统：Mac OSX Catalina 10.15.1&lt;/li&gt;
@@ -27,11 +27,11 @@
 IDEA社区版本默认不支持Spring Initializr，而Spring Assistant插件可以让社区版用户也能享受到快速创建Spring Boot项目的便利，功能几乎与企业版一致！&lt;/p&gt;
 &lt;p&gt;在&lt;a href=&#34;https://plugins.jetbrains.com/idea&#34;&gt;官方插件市场&lt;/a&gt;搜索&lt;strong&gt;Spring Assistant&lt;/strong&gt;并下载&lt;/p&gt;
 &lt;div style=&#34;text-align:center&#34;&gt;  
-  &lt;img src=&#34;http://localhost:1313/images/idea-plugins.png&#34;&gt;  
+  &lt;img src=&#34;https://vibecoddd.github.io/images/idea-plugins.png&#34;&gt;  
 &lt;/div&gt;
 &lt;p&gt;在&lt;strong&gt;Preferences &amp;gt; Plugins&lt;/strong&gt;设置中，选择**Install Plugin from Disk&amp;hellip;**安装下载好的插件zip包&lt;/p&gt;
 &lt;div style=&#34;text-align:center&#34;&gt;  
-  &lt;img src=&#34;http://localhost:1313/images/plugin-install.png&#34;&gt;  
+  &lt;img src=&#34;https://vibecoddd.github.io/images/plugin-install.png&#34;&gt;  
 &lt;/div&gt;
 &lt;p&gt;安装完成后重启IDEA，插件就生效了！&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tips：&lt;/strong&gt; 如果网络不好下载失败，可以使用IDEA的HTTP代理设置（Preferences &amp;gt; Appearance &amp;amp; Behavior &amp;gt; System Settings &amp;gt; HTTP Proxy）配置代理。&lt;/p&gt;
@@ -39,7 +39,7 @@ IDEA社区版本默认不支持Spring Initializr，而Spring Assistant插件可�
 &lt;p&gt;选择&lt;strong&gt;Spring Assistant&lt;/strong&gt;按步骤新建项目，这个过程和使用Spring Initializr官网基本一致。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Step 1: 选择项目类型和Spring Boot版本&lt;/strong&gt;&lt;/p&gt;
 &lt;div style=&#34;text-align:center&#34;&gt;  
-  &lt;img src=&#34;http://localhost:1313/images/new-proj-1.png&#34;&gt;  
+  &lt;img src=&#34;https://vibecoddd.github.io/images/new-proj-1.png&#34;&gt;  
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Type&lt;/strong&gt;: 选择Maven Project（也可以选Gradle，看个人喜好）&lt;/li&gt;

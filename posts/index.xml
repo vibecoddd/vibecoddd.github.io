@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Mark&#39;s BLOG</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://vibecoddd.github.io/posts/</link>
     <description>Recent content in Posts on Mark&#39;s BLOG</description>
     <generator>Hugo -- 0.154.3</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 Jan 2020 21:25:57 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vibecoddd.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Spring Boot：从开发到远程部署指南</title>
-      <link>http://localhost:1313/posts/java-web%E4%B9%8B%E6%97%85/</link>
+      <link>https://vibecoddd.github.io/posts/java-web%E4%B9%8B%E6%97%85/</link>
       <pubDate>Tue, 28 Jan 2020 21:25:57 +0000</pubDate>
-      <guid>http://localhost:1313/posts/java-web%E4%B9%8B%E6%97%85/</guid>
+      <guid>https://vibecoddd.github.io/posts/java-web%E4%B9%8B%E6%97%85/</guid>
       <description>&lt;h3 id=&#34;项目环境&#34;&gt;项目环境&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;操作系统：Mac OSX Catalina 10.15.1&lt;/li&gt;
@@ -27,11 +27,11 @@
 IDEA社区版本默认不支持Spring Initializr，而Spring Assistant插件可以让社区版用户也能享受到快速创建Spring Boot项目的便利，功能几乎与企业版一致！&lt;/p&gt;
 &lt;p&gt;在&lt;a href=&#34;https://plugins.jetbrains.com/idea&#34;&gt;官方插件市场&lt;/a&gt;搜索&lt;strong&gt;Spring Assistant&lt;/strong&gt;并下载&lt;/p&gt;
 &lt;div style=&#34;text-align:center&#34;&gt;  
-  &lt;img src=&#34;http://localhost:1313/images/idea-plugins.png&#34;&gt;  
+  &lt;img src=&#34;https://vibecoddd.github.io/images/idea-plugins.png&#34;&gt;  
 &lt;/div&gt;
 &lt;p&gt;在&lt;strong&gt;Preferences &amp;gt; Plugins&lt;/strong&gt;设置中，选择**Install Plugin from Disk&amp;hellip;**安装下载好的插件zip包&lt;/p&gt;
 &lt;div style=&#34;text-align:center&#34;&gt;  
-  &lt;img src=&#34;http://localhost:1313/images/plugin-install.png&#34;&gt;  
+  &lt;img src=&#34;https://vibecoddd.github.io/images/plugin-install.png&#34;&gt;  
 &lt;/div&gt;
 &lt;p&gt;安装完成后重启IDEA，插件就生效了！&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tips：&lt;/strong&gt; 如果网络不好下载失败，可以使用IDEA的HTTP代理设置（Preferences &amp;gt; Appearance &amp;amp; Behavior &amp;gt; System Settings &amp;gt; HTTP Proxy）配置代理。&lt;/p&gt;
@@ -39,7 +39,7 @@ IDEA社区版本默认不支持Spring Initializr，而Spring Assistant插件可�
 &lt;p&gt;选择&lt;strong&gt;Spring Assistant&lt;/strong&gt;按步骤新建项目，这个过程和使用Spring Initializr官网基本一致。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Step 1: 选择项目类型和Spring Boot版本&lt;/strong&gt;&lt;/p&gt;
 &lt;div style=&#34;text-align:center&#34;&gt;  
-  &lt;img src=&#34;http://localhost:1313/images/new-proj-1.png&#34;&gt;  
+  &lt;img src=&#34;https://vibecoddd.github.io/images/new-proj-1.png&#34;&gt;  
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Type&lt;/strong&gt;: 选择Maven Project（也可以选Gradle，看个人喜好）&lt;/li&gt;
@@ -52,10 +52,10 @@ IDEA社区版本默认不支持Spring Initializr，而Spring Assistant插件可�
     </item>
     <item>
       <title>孵化Twitter：一个关于友情、创业与背叛的故事</title>
-      <link>http://localhost:1313/posts/%E5%AD%B5%E5%8C%96twitter%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E%E5%8F%8B%E6%83%85%E5%88%9B%E4%B8%9A%E4%B8%8E%E8%83%8C%E5%8F%9B%E7%9A%84%E6%95%85%E4%BA%8B/</link>
+      <link>https://vibecoddd.github.io/posts/%E5%AD%B5%E5%8C%96twitter%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E%E5%8F%8B%E6%83%85%E5%88%9B%E4%B8%9A%E4%B8%8E%E8%83%8C%E5%8F%9B%E7%9A%84%E6%95%85%E4%BA%8B/</link>
       <pubDate>Tue, 13 Jun 2017 01:16:11 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E5%AD%B5%E5%8C%96twitter%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E%E5%8F%8B%E6%83%85%E5%88%9B%E4%B8%9A%E4%B8%8E%E8%83%8C%E5%8F%9B%E7%9A%84%E6%95%85%E4%BA%8B/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/first-tweet.jpg&#34;&gt;&lt;/p&gt;
+      <guid>https://vibecoddd.github.io/posts/%E5%AD%B5%E5%8C%96twitter%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E%E5%8F%8B%E6%83%85%E5%88%9B%E4%B8%9A%E4%B8%8E%E8%83%8C%E5%8F%9B%E7%9A%84%E6%95%85%E4%BA%8B/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://vibecoddd.github.io/images/first-tweet.jpg&#34;&gt;&lt;/p&gt;
 &lt;p align=&#34;center&#34;&gt;Twitter创始人Jack Dorsey的第一条推文&lt;/p&gt;
 &lt;h3 id=&#34;雨夜故事&#34;&gt;雨夜故事&lt;/h3&gt;
 &lt;p&gt;像往常一样，杰克·多西带着醉意钻进友人诺阿的车里，安静地坐在那儿。&lt;/p&gt;
@@ -120,9 +120,9 @@ IDEA社区版本默认不支持Spring Initializr，而Spring Assistant插件可�
     </item>
     <item>
       <title>LLVM探究</title>
-      <link>http://localhost:1313/posts/llvm%E6%8E%A2%E7%A9%B6/</link>
+      <link>https://vibecoddd.github.io/posts/llvm%E6%8E%A2%E7%A9%B6/</link>
       <pubDate>Thu, 22 Sep 2016 19:42:20 +0000</pubDate>
-      <guid>http://localhost:1313/posts/llvm%E6%8E%A2%E7%A9%B6/</guid>
+      <guid>https://vibecoddd.github.io/posts/llvm%E6%8E%A2%E7%A9%B6/</guid>
       <description>&lt;p&gt;iOSer都知道LLVM（Low Level Virtual Machine）是Xcode自带的编译器，而在LLVM诞生之前，Apple一直依赖另一个开源编译器GCC。随着Apple收购乔布斯的创业公司NextStep，面向对象语言Objective-C正式成为Apple官方的开发语言。由于当时GCC社区开发者未能及时支持OC的新语言特性，加上GCC开发者与Apple在编译器支持模块化调用方面存在分歧，最终让Apple选择分道扬镳，并转头拥抱了另一个开源项目LLVM。&lt;/p&gt;
 &lt;p&gt;这场&amp;quot;分手&amp;quot;的深层原因其实更加复杂：GCC的GPL许可证要求任何基于GCC的修改都必须开源，这对于Apple这样重视知识产权的公司来说是难以接受的。而且GCC的代码库经过20多年的发展，已经变成了一个高度耦合、难以扩展的庞然大物。Apple需要的是一个能够快速迭代、支持新语言特性、并且可以深度集成到IDE中的现代化编译器。&lt;/p&gt;
 &lt;p&gt;LLVM起源于2000年，是由美国UIUC大学的Chris Lattner博士发起，Chris Lattner也是后来的Swift之父。最初LLVM是Chris Lattner的硕士论文项目，旨在构建一个&amp;quot;终身代码优化系统&amp;quot;（Lifelong Program Analysis &amp;amp; Transformation），可以在编译时、链接时、运行时甚至闲置时对代码进行持续优化。这个大胆的想法吸引了Apple的注意。&lt;/p&gt;
@@ -148,14 +148,14 @@ IDEA社区版本默认不支持Spring Initializr，而Spring Assistant插件可�
 &lt;h2 id=&#34;llvm架构&#34;&gt;LLVM架构&lt;/h2&gt;
 &lt;p&gt;传统编译器的三段式架构：&lt;/p&gt;
 &lt;div style=&#34;text-align:center&#34;&gt;  
-  &lt;img src=&#34;http://localhost:1313/images/single-arch.png&#34;&gt;  
+  &lt;img src=&#34;https://vibecoddd.github.io/images/single-arch.png&#34;&gt;  
 &lt;/div&gt;
 &lt;p&gt;编译前端（Frontend）通过词法、语法、语义一系列分析，构建抽象语法树（AST），AST可以转换成某种中间表示（IR），作为编译优化器（Optimizer）的输入。编译优化器负责对中间代码进行优化，比如无用代码消除（Dead Code Elimination）、冗余指令合并（Common Subexpression Elimination）、函数内联（Function Inlining）等，以提升代码运行时性能。编译优化器输入IR，最终输出是优化过的IR。经过编译优化器（Optimizer）优化后的IR经过编译后端（Backend）转换成目标平台的机器码。&lt;/p&gt;
 &lt;p&gt;这个过程中，词法分析（Lexical Analysis）将源代码转换为token流，语法分析（Syntax Analysis）根据语言的文法规则构建语法树，语义分析（Semantic Analysis）进行类型检查、作用域解析等工作。这些步骤在编译原理中被称为编译器的&amp;quot;前端工作&amp;quot;。&lt;/p&gt;
 &lt;p&gt;通过这种组件化的设计，任何编程语言的编译器只要实现了上述3个部件，就能够把对应语言编写的源代码编译成目标平台可运行的机器代码。&lt;/p&gt;
 &lt;p&gt;于是支持多语言多平台的新架构被提出：&lt;/p&gt;
 &lt;div style=&#34;text-align:center&#34;&gt;  
-  &lt;img src=&#34;http://localhost:1313/images/multi-arch.png&#34;&gt;  
+  &lt;img src=&#34;https://vibecoddd.github.io/images/multi-arch.png&#34;&gt;  
 &lt;/div&gt;
 &lt;p&gt;上述新架构支持不同的编程语言生成统一的中间表示（IR），新语言只用实现一个新的编译前端（Frontend），编译优化器（Optimizer）和编译后端（Backend）则可以复用。这种架构的核心思想是&amp;quot;一次编写，多次复用&amp;quot;（Write Once, Reuse Many Times）。&lt;/p&gt;
 &lt;p&gt;在现存的编译器中，JVM、.Net虚拟机提供了定义良好的中间表示字节码，理论上任意语言只要实现编译前端，支持把源代码转成字节码就可以使用JVM或者.Net虚拟机。但是运行时强制JIT编译、GC等机制并不适合像C这样的系统级编程语言。JVM和.Net的设计目标是托管环境（Managed Environment），它们假设有一个运行时系统来管理内存、处理异常、提供安全检查。这对于C/C++这种需要手动管理内存、直接操作硬件的语言来说是不合适的。&lt;/p&gt;
@@ -171,7 +171,7 @@ IDEA社区版本默认不支持Spring Initializr，而Spring Assistant插件可�
 &lt;/ul&gt;
 &lt;p&gt;每个库都有清晰的接口定义和职责划分，库之间的依赖关系是单向的、非循环的。这种设计使得开发者可以只链接需要的库，减少最终可执行文件的大小。例如，如果你只需要分析LLVM IR而不需要生成机器码，就可以只链接分析相关的库。&lt;/p&gt;
 &lt;div style=&#34;text-align:center&#34;&gt;  
-  &lt;img src=&#34;http://localhost:1313/images/llvm-arch.png&#34;&gt;  
+  &lt;img src=&#34;https://vibecoddd.github.io/images/llvm-arch.png&#34;&gt;  
 &lt;/div&gt;
 &lt;p&gt;LLVM的架构体现了软件工程中的几个重要原则：&lt;/p&gt;
 &lt;ol&gt;
